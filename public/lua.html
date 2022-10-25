@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lua luciernaga</title>
+    <link rel="stylesheet" href="css/lua.css" />
+  </head>
+  <body>
+    <section>
+      <form
+        class="register"
+        action="/"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <p class="reg">Cargar Imagen</p>
+        <label id="avatarLabel" for="avatar"
+          >Imagen de Perfil de la niña :)´
+        </label>
+        <input type="file" id="avatar" name="avatar" accept="image/*" />
+        <input
+          type="text"
+          name="name"
+          id="nameLua"
+          placeholder="Nombre de Usuario"
+          maxlength="10"
+          required
+        />
+        <input
+          type="text"
+          name="description"
+          id="descriptionPic"
+          placeholder="Descripcion de imagen"
+          maxlength="100"
+        />
+        <input class="send" type="submit" value="Enviar" />
+      </form>
+    </section>
+    <section class="presentacion">
+      <h1 class="tit">Hola si, mi nombre es Lua</h1>
+      <p class="description">
+        Naci el 11 de Junio 2022, vivia en un comedor comunitario en Pompeya y
+        el 18 de Julio fui adoptada,
+      </p>
+      <figure class="image-presentacion">
+        <img src="./images/lua11.jpg" alt="imagen 1" />
+      </figure>
+    </section>
+    <section class="container-selfies">
+      <h2 class="tit-selfies">Ahora algunas selfies</h2>
+      <div class="selfies"></div>
+    </section>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="selfies.js"></script>
+  <script src="app.js"></script>
+</html>
